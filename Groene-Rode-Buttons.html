@@ -23,6 +23,11 @@
         let button = document.createElement("button");
         button.innerHTML = (i);
         container.appendChild(button);
+        button.style.backgroundColor = "green";
+        button.addEventListener("click", function () {
+            button.style.backgroundColor = "red";
+        })
+
 
     }
 </script>

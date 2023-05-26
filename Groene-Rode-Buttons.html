@@ -15,6 +15,10 @@
 
 
 <script>
+    var kleur1 = "red"
+    var kleur2 = "black"
+    var kleur3 = "purple"
+
     var aantal = 50;
     const container = document.getElementById("container");
 
@@ -25,21 +29,22 @@
         container.appendChild(button);
         button.style.backgroundColor = "green";
         button.addEventListener("click", function () {
-            if (button.style.backgroundColor == "green") {
-                button.style.backgroundColor = "red";
-            }
-            else if (button.style.backgroundColor == "red") {
-                button.style.backgroundColor = "purple";
-            }
-            else if (button.style.backgroundColor == "purple") {
-                button.style.backgroundColor = "blue";
-            }
-            else if (button.style.backgroundColor == "blue") {
-                button.style.backgroundColor = "black";
-            }
-            else if (button.style.backgroundColor == "black") {
+            if (button.style.backgroundColor == "black") {
                 button.remove();
             }
+            else if (button.style.backgroundColor == "green") {
+                button.style.backgroundColor = kleur1;
+            }
+            else if (button.style.backgroundColor == kleur1) {
+                button.style.backgroundColor = kleur2;
+            }
+            else if (button.style.backgroundColor == kleur2) {
+                button.style.backgroundColor = kleur3;
+            }
+            else if (button.style.backgroundColor == kleur3) {
+                button.style.backgroundColor = "black";
+            }
+
         })
 
 

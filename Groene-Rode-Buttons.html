@@ -25,7 +25,21 @@
         container.appendChild(button);
         button.style.backgroundColor = "green";
         button.addEventListener("click", function () {
-            button.style.backgroundColor = "red";
+            if (button.style.backgroundColor == "green") {
+                button.style.backgroundColor = "red";
+            }
+            else if (button.style.backgroundColor == "red") {
+                button.style.backgroundColor = "purple";
+            }
+            else if (button.style.backgroundColor == "purple") {
+                button.style.backgroundColor = "blue";
+            }
+            else if (button.style.backgroundColor == "blue") {
+                button.style.backgroundColor = "black";
+            }
+            else if (button.style.backgroundColor == "black") {
+                button.remove();
+            }
         })
 
 
